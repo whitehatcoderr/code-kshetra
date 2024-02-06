@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="true"> -->
+<!-- <link rel="alternate" type="application/atom+xml" href="https://www.mentalhealth.com/feed" title="mentalhealth.com feed"> -->
+<title>Hackathon</title>
+<meta name="description" content="Bissful Minds is your  source for mental health support. Join us in your pursuit of well-being.">
+
+<link rel="stylesheet" href="/style hac.css">
+
+<meta property="og:image" content="https://www.mentalhealth.com/img/social-img.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.mentalhealth.com/img/favicon.png ">
+<meta name="csrf-token" content>
+<link rel="stylesheet" href="https://www.mentalhealth.com/assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.mentalhealth.com/assets/css/vendor/icomoon.css">
+
+<link rel="stylesheet" href="https://www.mentalhealth.com/assets/css/app.min.css?v14832799">
+
+<style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+</head>
+<body class="sticky-header">
+<div id="main-wrapper" class="main-wrapper">
+<header id="header-main" x-data="{ open: false }">
+<nav class="navbar navbar--megamenu navbar-main navbar-expand-lg navbar-light shadow bg-white py-3 py-lg-0" id="navbar-main">
+<div class="container">
+<a class="navbar-brand order-1 lg-size" href="https://www.mentalhealth.com">
+<!-- <img alt="mentalhealth logo" src="" id="navbar-logo" width="260" height="43"> -->
+</a>
+<button class="navbar-toggler collapsed order-3 order-lg-2" type="button" aria-controls="navbar-main-collapse" x-on:click="open = ! open" :aria-expanded="open" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+<div class="navbar-toggler-icon__row-bar"></div>
+<div class="navbar-toggler-icon__row-bar navbar-toggler-icon__row-bar--shorter"></div>
+<div class="navbar-toggler-icon__row-bar"></div>
+</span>
+</button>
+
+
+<li class="nav-item dropdown dropdown-animate my-0 py-3 w-100 mt-3 mb-0 mt-lg-0" data-toggle="hover" x-data="{ open: false, secondaryMenuOpen: '' }" x-on:mouseleave="open = false" x-on:mouseenter="open = true">
+    <span class="nav-link nav-link--padding dropdown-toggle" x-on:click="toggleDropdown('communityDropdown', $event)" x-bind:class="open ? 'dropdown-toggle--active' : ''" id="communityDropdownToggle" aria-haspopup="true" :aria-expanded="open">Community</span>
+    <div id="communityDropdown" class="dropdown-menu w-100 p-4 ml-0 border-0 mb-3 mb-lg-0" aria-labelledby="communityDropdownToggle">
+    <div class="container container--mobile-menu d-block position-static mx-0 mx-lg-auto">
+    <ul class="nav pt-4 pb-1 pb-sm-2 px-3 px-sm-4 px-lg-0 column-count-3-grid">
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >About Us</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">Blog</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">News</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Social</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <li class="nav-item dropdown dropdown-animate my-0 py-3 w-100" data-toggle="hover" x-data="{ open: false, secondaryMenuOpen: '' }" x-on:mouseleave="open = false" x-on:mouseenter="open = true">
+    <span class="nav-link nav-link--padding dropdown-toggle" x-on:click="toggleDropdown('content-integrityDropdown', $event)" x-bind:class="open ? 'dropdown-toggle--active' : ''" id="content-integrityDropdownToggle" aria-haspopup="true" :aria-expanded="open">Time-Progresser</span>
+    <div id="content-integrityDropdown" class="dropdown-menu w-100 p-4 ml-0 border-0 mb-3 mb-lg-0" aria-labelledby="content-integrityDropdownToggle">
+    <div class="container container--mobile-menu d-block position-static mx-0 mx-lg-auto">
+    <ul class="nav pt-4 pb-1 pb-sm-2 px-3 px-sm-4 px-lg-0 column-count-3-grid">
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">Time Manager</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">progress Checker</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Our-Team</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">Publishing</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Write for Us</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <li class="nav-item dropdown dropdown-animate my-0 py-3 w-100" data-toggle="hover" x-data="{ open: false, secondaryMenuOpen: '' }" x-on:mouseleave="open = false" x-on:mouseenter="open = true">
+    <span class="nav-link nav-link--padding dropdown-toggle" x-on:click="toggleDropdown('mental-health-infoDropdown', $event)" x-bind:class="open ? 'dropdown-toggle--active' : ''" id="mental-health-infoDropdownToggle" aria-haspopup="true" :aria-expanded="open">Mental Health Info</span>
+    <div id="mental-health-infoDropdown" class="dropdown-menu w-100 p-4 ml-0 border-0 mb-3 mb-lg-0" aria-labelledby="mental-health-infoDropdownToggle">
+    <div class="container container--mobile-menu d-block position-static mx-0 mx-lg-auto">
+    <ul class="nav pt-4 pb-1 pb-sm-2 px-3 px-sm-4 px-lg-0 column-count-3-grid">
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenuanxiety-disorders" :aria-expanded="secondaryMenuOpen == 'anxiety-disorders'" x-on:click.prevent="(secondaryMenuOpen == 'anxiety-disorders') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'anxiety-disorders'" x-bind:class="secondaryMenuOpen == 'anxiety-disorders' ? 'nav-link--submenu--active' : ''">Anxiety Disorders<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+    <div class="dropdown-menu__submenu w-100 pb-4" x-cloak x-show="secondaryMenuOpen == 'anxiety-disorders'" id="secondaryMenuanxiety-disorders">
+    
+
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenuchildhood-disorders" :aria-expanded="secondaryMenuOpen == 'childhood-disorders'" x-on:click.prevent="(secondaryMenuOpen == 'childhood-disorders') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'childhood-disorders'" x-bind:class="secondaryMenuOpen == 'childhood-disorders' ? 'nav-link--submenu--active' : ''">Childhood Disorders<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+   
+
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenueating-disorders" :aria-expanded="secondaryMenuOpen == 'eating-disorders'" x-on:click.prevent="(secondaryMenuOpen == 'eating-disorders') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'eating-disorders'" x-bind:class="secondaryMenuOpen == 'eating-disorders' ? 'nav-link--submenu--active' : ''">Eating Disorders<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+    <div class="dropdown-menu__submenu w-100 pb-4" x-cloak x-show="secondaryMenuOpen == 'eating-disorders'" id="secondaryMenueating-disorders">
+    <div class="container container--mobile-menu d-block position-static pb-0 pb-lg-9 mx-0 mx-lg-auto">
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenumood-disorders" :aria-expanded="secondaryMenuOpen == 'mood-disorders'" x-on:click.prevent="(secondaryMenuOpen == 'mood-disorders') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'mood-disorders'" x-bind:class="secondaryMenuOpen == 'mood-disorders' ? 'nav-link--submenu--active' : ''">Mood Disorders<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+    <div class="dropdown-menu__submenu w-100 pb-4" x-cloak x-show="secondaryMenuOpen == 'mood-disorders'" id="secondaryMenumood-disorders">
+    <div class="container container--mobile-menu d-block position-static pb-0 pb-lg-9 mx-0 mx-lg-auto">
+    <div class="navbar--megamenu__divider mb-7 d-none d-lg-block"></div>
+
+    </div>
+    </div>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenucognitive-disorders" :aria-expanded="secondaryMenuOpen == 'cognitive-disorders'" x-on:click.prevent="(secondaryMenuOpen == 'cognitive-disorders') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'cognitive-disorders'" x-bind:class="secondaryMenuOpen == 'cognitive-disorders' ? 'nav-link--submenu--active' : ''">Cognitive Disorders<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+    <div class="dropdown-menu__submenu w-100 pb-4" x-cloak x-show="secondaryMenuOpen == 'cognitive-disorders'" id="secondaryMenucognitive-disorders">
+    <div class="container container--mobile-menu d-block position-static pb-0 pb-lg-9 mx-0 mx-lg-auto">
+    <div class="navbar--megamenu__divider mb-7 d-none d-lg-block"></div>
+    
+    </div>
+    </div>
+   
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <button class="btn nav-link nav-link--submenu p-0 d-block text-left" role="button" tabindex="0" aria-controls="secondaryMenumedication-info" :aria-expanded="secondaryMenuOpen == 'medication-info'" x-on:click.prevent="(secondaryMenuOpen == 'medication-info') ? secondaryMenuOpen = '' : secondaryMenuOpen = 'medication-info'" x-bind:class="secondaryMenuOpen == 'medication-info' ? 'nav-link--submenu--active' : ''">Medication Info<img src="https://www.mentalhealth.com/img/icons/chevron-right.svg" alt="Toggle submenu" width="14" height="14" class="icon mr-0"></button>
+    <div class="dropdown-menu__submenu w-100 pb-4" x-cloak x-show="secondaryMenuOpen == 'medication-info'" id="secondaryMenumedication-info">
+    <div class="container container--mobile-menu d-block position-static pb-0 pb-lg-9 mx-0 mx-lg-auto">
+    <div class="navbar--megamenu__divider mb-7 d-none d-lg-block"></div>
+    <ul class="nav d-none d-lg-block mt-5">
+    <li class="nav-item px-0 mb-3 mb-lg-5">
+    <a class="nav-link nav-link--submenu nav-link--subheading p-0 lh-200" href="https://www.mentalhealth.com/medication">Medication Info</a>
+    </li>
+    </ul>
+    
+    </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <li class="nav-item dropdown dropdown-animate my-0 py-3 w-100" data-toggle="hover" x-data="{ open: false, secondaryMenuOpen: '' }" x-on:mouseleave="open = false" x-on:mouseenter="open = true">
+    <a class="nav-link nav-link--padding dropdown-toggle" x-on:click="toggleDropdown('therapyDropdown', $event)" x-bind:class="open ? 'dropdown-toggle--active' : ''" href="https://www.mentalhealth.com/therapy" id="therapyDropdownToggle" role="button" aria-haspopup="true" :aria-expanded="open">Therapy</a>
+    <div id="therapyDropdown" class="dropdown-menu w-100 p-4 ml-0 border-0 mb-3 mb-lg-0" aria-labelledby="therapyDropdownToggle">
+    <div class="container container--mobile-menu d-block position-static mx-0 mx-lg-auto">
+    <ul class="nav pt-4 pb-1 pb-sm-2 px-3 px-sm-4 px-lg-0 column-count-3-grid">
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Cognitive Behavioral Therapy (CBT)</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">Dialectical Behavior Therapy (DBT)</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Integrative Therapy</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0">Humanistic Therapy</a>
+    </li>
+    <li class="nav-item px-0 mb-3 mb-lg-4 break-inside-avoid-column">
+    <a class="nav-link nav-link--submenu p-0" >Psychodynamic Therapy</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <li class="nav-item my-0 py-3 d-block d-lg-none">
+    <a class="nav-link nav-link--padding text-nowrap" onclick="return gtag_report_conversion('https://my.mentalhealth.com/login');">Log In</a>
+    </li>
+    </ul>
+     </div>
+    <div class="header-action order-2 order-lg-3 ms-2 ms-lg-5 ps-4 ps-0 ps-sm-2 ps-md-4 ps-lg-0 ps-xl-5 me-1 me-sm-5 me-lg-0">
+    <a onclick="return gtag_report_conversion('https://my.mentalhealth.com/login');"  class="edu-btn btn-medium d-none d-xl-block cta-track-click" data-event="cta-click-get-started" rel="nofollow">Log in</a>
+    <a onclick="return gtag_report_conversion('https://my.mentalhealth.com/login');"  class="edu-btn btn-small px-4 px-sm-4 d-block d-xl-none fs-5 text-white cta-track-click" data-event="cta-click-get-started" style="margin-left: 40px;min-width:81px;" rel="nofollow">Log in</a> 
+    </div>
+    </div>
+    </nav>
+    </header>
+    <div class="edu-section-gap edu-about-area about-style-8 homepage-hero">
+    <div class="container">
+    <div class="row gy-5 gy-lg-0 gx-5">
+    <div class="col-lg-6 mt-1">
+    <div class="about-content">
+    <div class="section-title section-left text-center">
+    <h1 class="h1-responsive title fw-medium"><span class="d-block d-lg-inline">Start your mental</span> <span class="d-block d-lg-inline">health journey</span></h1>
+    <p class="mt-4 mt-lg-4">Join our public beta for early access to a healthier<br class="d-none d-lg-block"> future. Your feedback shapes our platform.</p>
+    </div>
+    <div class="banner-btn pt-3 pt-lg-3">
+    <!-- <a onclick="return gtag_report_conversion('https://my.mentalhealth.com/register');" href="https://my.mentalhealth.com/register" rel="nofollow" class="edu-btn btn-medium d-block d-lg-table mx-auto cta-track-click" data-event="cta-click-get-started" rel="nofollow">Get started now</a> -->
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-6 col-2nd">
+    <div class="about-image-gallery">
+    <div class="row g-5" id="masonry-gallery">
+    <div class="col-6 masonry-item">
+    <div class="thumbnail thumbnail-1">
+    <img src="1.jpeg" alt="happy woman" data-uw-rm-alt-original="happy woman" data-uw-rm-alt="ALT">
+    </div>
+    </div>
+    <div class="col-6 masonry-item" style="position: absolute; left: 300px; top: 0px;">
+    <div class="thumbnail thumbnail-2">
+    <img src="3.jpeg" alt="happy male" data-uw-rm-alt-original="happy male" data-uw-rm-alt="ALT">
+    </div>
+    <div class="thumbnail thumbnail-4 mt-4">
+    <img src="2.jpeg" alt="happy woman" data-uw-rm-alt-original="happy woman" data-uw-rm-alt="ALT">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="edu-categorie-area edu-section-gap">
+        <div class="container">
+        <div class="section-title section-center">
+        <h2 class="title">Reliable Resources</h2>
+        <p>Our resources offer reliable mental health information.</p>
+        </div>
+        <div class="row g-5">
+        <div class="col-lg-3 col-md-6 col-12 mt-5 mt-lg-4 d-flex flex-wrap align-items-stretch">
+        <div class="edu-course shadow w-100 h-100">
+        <div class="inner">
+        <div class="thumbnail">
+        
+        <img src="https://www.mentalhealth.com/images/disorders.jpg" alt="disorders">
+        </a>
+        </div>
+        <div class="content">
+        <span class="title fw-bold h5 d-block mb-2">Mental Illness</a></span>
+        <p class="mb-0">Mental illness, also known as mental health disorders, refers to a range of mental health conditions — disorders that affect your thinking, mood and behavior.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mt-5 mt-lg-4 d-flex flex-wrap align-items-stretch">
+        <div class="edu-course shadow w-100 h-100">
+        <div class="inner">
+        <div class="thumbnail">
+    
+        <img src="https://www.mentalhealth.com/images/medication.jpg" alt="Medication">
+        </a>
+        </div>
+        <div class="content">
+        <span class="title fw-bold h5 d-block mb-2">Medication Info</></span>
+        <p class="mb-0">Explore information on mental health medications, which can offer temporary relief from the symptoms of mental illness.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mt-5 mt-lg-4 d-flex flex-wrap align-items-stretch">
+        <div class="edu-course shadow w-100 h-100">
+        <div class="inner">
+        <div class="thumbnail">
+        <img src="https://www.mentalhealth.com/images/therapy.jpg" alt="social">
+        </a>
+        </div>
+        <div class="content">
+        <span class="title fw-bold h5 d-block mb-2">Therapy</a></span>
+        <p class="mb-0">When it comes to dealing with mental health issues, talk therapy is an effective way to transform distressing emotions, thoughts, and behaviors.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 mt-5 mt-lg-4">
+        <h2 class="h3">Trending</h2>
+        <div class="row g-4">
+        <div class="col-12">
+        <div class="categorie-grid categorie-style-2 color-primary-style edublink-svg-animate position-relative">
+        <div class="content">
+        <a  class="fw-bold link-stretched title text-dark">
+        <span class="title">Schizophrenia</span>
+        </a>
+        </div>
+        </div>
+        </div>
+        <div class="col-12">
+        <div class="categorie-grid categorie-style-2 color-extra05-style edublink-svg-animate position-relative">
+        <div class="content">
+        <a class="fw-bold link-stretched title text-dark">
+        <span class="title">Bipolar</span>
+        </a>
+        </div>
+        </div>
+        </div>
+        <div class="col-12">
+        <div class="categorie-grid categorie-style-2 color-secondary-style edublink-svg-animate position-relative">
+        <div class="content">
+        <a href=class="fw-bold link-stretched title text-dark">
+        <span class="title">ADHD</span>
+        </a>
+        </div>
+        </div>
+        </div>
+        <div class="col-12">
+        <div class="categorie-grid categorie-style-2 color-primary-style edublink-svg-animate position-relative">
+        <div class="content">
+        <a  class="fw-bold link-stretched title text-dark">
+        <span class="title">Anorexia</span>
+        </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+    </body>
+    </html>
